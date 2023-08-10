@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div>
+      <button id="menu-bar"><i class="fas fa-bars"></i> </button>
+      <img id="logo" src="images/logo.svg" alt="">
+
+    </div>
+
+    <ul id="menus">
+
+      <li><a href="#">Collections</a></li>
+      <li><a href="#">Men</a></li>
+      <li><a href="#">Women</a></li>
+      <li><a href="#">Contact</a></li>
+
+    </ul>
+
+    <div id="user-profile">
+
+      <button id="cart"><img src="images/icon-cart.svg" alt="">
+        <!--Used to hold nunmer of items in cart-->
+        <span id="item-in-cart"></span>
+      </button>
+
+      <img id="avatar" src="images/image-avatar.png" alt="">
+
+      <div class="cart-info toggle">
+        <div class="display-cart toggle">
+          <h3>Cart</h3>
+          <div class="order-details toggle">
+
+
+            <img src="images/image-product-1-thumbnail.jpg" alt="" width="30px">
+            <div class="toggle">
+              <p>Fall limited addition</p>
+              <div>$125 * <span id="total-items"></span> <b id="total-price"></b></div>
+            </div>
+
+            <img id="delete" src="images/icon-delete.svg" alt="">
+
+
+          </div>
+          <p id="empty-cart">You cart is empty</p>
+          <button id="check-out">Checkout</button>
+
+        </div>
+      </div>
+
+
+
+  </nav>
+
+
+  <!-- Nav bar for smaller screens (call it sidebar for simplicity) -->
+
+  <div class="side-bar-container">
+
+    <div class="side-bar">
+
+      <button id="hide-side-bar"><i class="fas fa-times"></i> </button>
+
+
+      <ul id="side-bar-ul">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+    </div>
+  </div>
+  <!-- Nav bar for smaller screens ends here(call it sidebar for simplicity) -->
+
+
+
+  <div class="light-box">
+
+    <div class="container">
+      <div id="cancel-btn">&times;</div>
+
+      <div class="light-box-images">
+
+
+        <div class="upper-portion">
+          <button class="nav-buttons" id="nav-back"><img src="images/icon-previous.svg" alt=""></button>
+
+          <img id="light-box-main-image" src="images/image-product-1.jpg" alt="">
+
+          <button class="nav-buttons" id="nav-next"><img src="images/icon-next.svg" alt=""></button>
+
+        </div>
+
+        <div class="product-thumbnails">
+
+          <img class="light-box-thumbnails" src="images/image-product-1-thumbnail.jpg" alt="" width="100px">
+          <img class="light-box-thumbnails" src="images/image-product-2-thumbnail.jpg" alt="" width="100px">
+          <img class="light-box-thumbnails" src="images/image-product-3-thumbnail.jpg" alt="" width="100px">
+          <img class="light-box-thumbnails" src="images/image-product-4-thumbnail.jpg" alt="" width="100px">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="product-main-card">
+    <div class="left-side">
+
+      <div class="main-product-image">
+
+        <button class="nav-buttons nav-mobo-buttons" id="nav-back-mobile"><img src="images/icon-previous.svg"
+            alt=""></button>
+
+        <img id="product-image" src="images/image-product-1.jpg" alt="">
+
+        <button class="nav-buttons nav-mobo-buttons" id="nav-next-mobile"><img src="images/icon-next.svg"
+            alt=""></button>
+
+      </div>
+
+      <div class="product-pictures">
+        <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+        <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+
+      </div>
+
+    </div>
+    <!-- left box ends here -->
+
+    <div class="right-side">
+      <h4>Sneaker Company</h4>
+
+      <h2>Fall Limited Edition Sneakers </h2>
+
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="pricing">
+        <div>
+          <h3>$125.00</h3>
+          <span id="discount">50%</span>
+        </div>
+        <small>$250.00</small>
+
+      </div>
+
+      <!-- Order portion -->
+      <div class="purchasing-options">
+
+
+        <!-- Quantity selection -->
+        <div class="select-quantity">
+
+          <button id="decrease-quantity">-</button>
+          <input type="text" id="quantity" placeholder="0">
+
+          <button id="increase-quantity">+</button>
+
+        </div>
+
+
+        <!--Add to cart button -->
+        <button id="add-to-cart">
+          <img src="images/icon-cart.svg" alt="">
+          <span>Add to cart</span>
+        </button>
+      </div>
+
+      <!-- Order portion end here -->
+
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/MuzammilHuxain" target="_blank">Muzammil Hussain</a>.
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
